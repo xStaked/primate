@@ -1,0 +1,95 @@
+---
+---
+
+<footer class="footer">
+  <div class="container">
+    <p class="giant display" aria-hidden="true">PRIMATE</p>
+    <div class="row">
+      <div>
+        <p class="lab">Explora tu mente · Expande tu perspectiva</p>
+        <p class="nota">
+          Contenido con fines educativos y de exploración. Nada de lo publicado constituye consejo
+          médico. Explora con curiosidad, conocimiento y respeto.
+        </p>
+      </div>
+      <nav aria-label="Mapa del sitio">
+        <a href="#manifiesto">Manifiesto</a>
+        <a href="#gnosis">Gnosis</a>
+        <a href="#mind">Mind</a>
+        <a href="#filosofia">Filosofía</a>
+        <a href="#productos">Productos</a>
+      </nav>
+    </div>
+    <div class="base">
+      <p>© {new Date().getFullYear()} Primate. Todos los derechos reservados.</p>
+      <p class="lab">Gnosis · Mind</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--void);
+    color: var(--text-on-dark);
+    border-top: 1px solid color-mix(in srgb, var(--text-on-dark) 12%, transparent);
+    padding: clamp(3rem, 7vw, 5rem) 0 2rem;
+    overflow: hidden;
+  }
+  .giant {
+    font-size: clamp(3.5rem, 12.5vw, 11rem);
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    margin: 0 0 2.5rem;
+    color: transparent;
+    -webkit-text-stroke: 1px color-mix(in srgb, var(--text-on-dark) 45%, transparent);
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .nota {
+    color: var(--muted-on-dark);
+    font-size: 0.92rem;
+    max-width: 34rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    justify-content: flex-end;
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--muted-on-dark);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  nav a:hover {
+    color: var(--text-on-dark);
+  }
+  .base {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--text-on-dark) 12%, transparent);
+    color: var(--muted-on-dark);
+    font-size: 0.9rem;
+  }
+  .base p {
+    margin: 0;
+  }
+  @media (max-width: 760px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+    nav {
+      justify-content: flex-start;
+    }
+  }
+</style>

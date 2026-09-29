@@ -1,0 +1,91 @@
+---
+---
+
+<section class="manifiesto" id="manifiesto">
+  <div class="container">
+    <p class="lab">PRM — 002 · La idea central</p>
+    <h2 class="display">Hay más de una forma de <em>ver las cosas.</em></h2>
+    <div class="grid">
+      <figure>
+        <div class="arch">
+          <img
+            src="/images/cerebro-jungla.jpg"
+            alt="Cerebro rodeado de vegetación exuberante, curiosidad y naturaleza"
+            loading="lazy"
+          />
+        </div>
+        <figcaption class="lab">Fig. 02 — La curiosidad es natural</figcaption>
+      </figure>
+      <div class="copy">
+        <p class="big">
+          Vivimos en un mundo que nos invita constantemente a pensar de la misma manera. Primate
+          nace de una pregunta diferente:
+        </p>
+        <p class="question display">¿Qué pasa cuando nos permitimos explorar nuevas perspectivas?</p>
+        <p class="small">
+          No prometemos respuestas. <strong>Creamos herramientas para hacer mejores preguntas.</strong>
+          Curiosidad primero. Experiencia después.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .manifiesto {
+    background: var(--bone);
+    color: var(--text-on-light);
+    padding: clamp(4rem, 9vw, 7.5rem) 0;
+  }
+  h2 {
+    font-size: clamp(2.4rem, 5.4vw, 4.4rem);
+    max-width: 20ch;
+    margin: 1rem 0 clamp(2rem, 5vw, 3.5rem);
+  }
+  h2 em {
+    color: var(--moss);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+  figure {
+    margin: 0;
+  }
+  figure img {
+    width: 100%;
+    height: clamp(380px, 45vw, 560px);
+    object-fit: cover;
+  }
+  figcaption {
+    margin-top: 0.9rem;
+    color: var(--muted-on-light);
+  }
+  .big {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+    max-width: 36rem;
+  }
+  .question {
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    border-left: 3px solid var(--ember);
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem;
+  }
+  .small {
+    color: var(--muted-on-light);
+    max-width: 36rem;
+    margin: 0;
+  }
+  .small strong {
+    color: var(--text-on-light);
+  }
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

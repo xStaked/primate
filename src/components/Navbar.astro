@@ -1,0 +1,73 @@
+---
+---
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="wordmark" aria-label="Primate — inicio">PRIMATE</a>
+    <nav aria-label="Navegación principal">
+      <a href="#manifiesto">Manifiesto</a>
+      <a href="#gnosis">Gnosis</a>
+      <a href="#mind">Mind</a>
+      <a href="#filosofia">Filosofía</a>
+    </nav>
+    <a href="#cierre" class="nav-cta">Explorar</a>
+  </div>
+</header>
+
+<style>
+  .nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--void) 72%, transparent);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid color-mix(in srgb, var(--text-on-dark) 12%, transparent);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 68px;
+  }
+  .wordmark {
+    font-family: var(--font-body);
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    font-size: 0.95rem;
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    gap: 1.75rem;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: var(--muted-on-dark);
+  }
+  nav a:hover {
+    color: var(--text-on-dark);
+  }
+  .nav-cta {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid color-mix(in srgb, var(--text-on-dark) 30%, transparent);
+    border-radius: 999px;
+    padding: 0.6rem 1.3rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .nav-cta:hover {
+    background: var(--acid);
+    color: #111;
+    border-color: var(--acid);
+  }
+  @media (max-width: 760px) {
+    nav {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,73 @@
+---
+---
+
+<section class="cierre" id="cierre">
+  <div class="bg" aria-hidden="true">
+    <img src="/images/silueta-neural.jpg" alt="" loading="lazy" />
+  </div>
+  <div class="container cierre-inner">
+    <p class="lab">PRM — 007 · Cierre</p>
+    <h2 class="display">¿Hasta dónde llega <em>tu curiosidad?</em></h2>
+    <p>
+      Hay cosas que conocemos. Hay cosas que creemos conocer. Y después está todo lo que todavía
+      no hemos descubierto.
+    </p>
+    <p class="firma display">Bienvenido a Primate.</p>
+    <div class="actions">
+      <a href="#top" class="btn btn-light">Explorar →</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cierre {
+    position: relative;
+    overflow: hidden;
+    background: var(--void);
+    color: var(--text-on-dark);
+    padding: clamp(5rem, 11vw, 9rem) 0;
+    text-align: center;
+  }
+  .bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.42;
+  }
+  .bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(70% 80% at 50% 50%, transparent 20%, var(--void) 90%);
+  }
+  .cierre-inner {
+    position: relative;
+  }
+  h2 {
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    margin: 1rem auto 1.25rem;
+    max-width: 20ch;
+  }
+  h2 em {
+    color: var(--acid);
+  }
+  p {
+    color: var(--muted-on-dark);
+    max-width: 36rem;
+    margin: 0 auto 1rem;
+    font-size: 1.1rem;
+  }
+  .firma {
+    color: var(--text-on-dark);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    margin: 1.5rem 0 2rem;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+</style>

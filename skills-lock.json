@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "badesign-skill": {
+      "source": "uxKero/badesign-skill",
+      "sourceType": "github",
+      "skillPath": "badesign-skill/SKILL.md",
+      "computedHash": "23b5c684f7c79b4a0994243235cebf55e41c2aa05ade5e78016cedfe49922246"
+    }
+  }
+}

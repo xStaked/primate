@@ -1,0 +1,15 @@
+# ---> Node
+node_modules/
+dist/
+.astro/
+
+# ---> OS
+.DS_Store
+
+# ---> Env
+.env
+.env.*
+!.env.example
+
+# ---> pnpm
+pnpm-debug.log*

@@ -1,0 +1,38 @@
+/* Primate — Design Tokens
+ * Nature × Science × Psychedelia × Luxury
+ * Base: Void + Bone. Acentos con rol asignado, no decoración.
+ */
+
+:root {
+  /* Superficies */
+  --void: #0c0c10;
+  --ink: #14141a;
+  --ink-2: #1d1d25;
+  --bone: #f2ede3;
+  --sand: #e6dbc6;
+  --paper: #faf7f0;
+
+  /* Acentos por rol */
+  --ember: #ff5c00; /* Mind — acción / energía diurna */
+  --magenta: #ff2e88; /* Gnosis — profundidad / percepción */
+  --moss: #33402a; /* Mind — naturaleza / laboratorio */
+  --acid: #d9f24f; /* marca — marcador de laboratorio, uso puntual */
+  --gold: #c8a24a; /* lujo editorial, detalles */
+
+  /* Texto */
+  --text-on-dark: #f4f1e8;
+  --muted-on-dark: #a8a49a;
+  --text-on-light: #16130d;
+  --muted-on-light: #6f6a5e;
+
+  /* Tipografía */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+
+  /* Forma y ritmo */
+  --arch: 999px 999px 28px 28px;
+  --radius: 20px;
+  --container: 76rem;
+  --line: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+}

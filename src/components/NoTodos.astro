@@ -12,6 +12,10 @@
       </p>
       <p class="quote">“Tiene que haber más.”</p>
     </div>
+    <ul class="exclusiones">
+      <li>Si buscas una solución mágica, no es aquí.</li>
+      <li>Si quieres promesas rápidas, tampoco.</li>
+    </ul>
     <p class="bienvenido">Si eres uno de ellos, bienvenido.</p>
   </div>
 </section>
@@ -58,6 +62,23 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--acid);
+  }
+  .exclusiones {
+    list-style: none;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .exclusiones li {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    color: var(--muted-on-dark);
+    border: 1px solid color-mix(in srgb, var(--text-on-dark) 22%, transparent);
+    border-radius: 999px;
+    padding: 0.6rem 1.1rem;
   }
   @media (max-width: 760px) {
     .grid {

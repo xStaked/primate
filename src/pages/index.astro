@@ -2,30 +2,42 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Navbar from '@/components/Navbar.astro';
 import Hero from '@/components/Hero.astro';
+import Marquee from '@/components/Marquee.astro';
 import Manifiesto from '@/components/Manifiesto.astro';
-import Mundos from '@/components/Mundos.astro';
-import Caminos from '@/components/Caminos.astro';
-import Filosofia from '@/components/Filosofia.astro';
+import Metodo from '@/components/Metodo.astro';
+import Gnosis from '@/components/Gnosis.astro';
+import Mind from '@/components/Mind.astro';
 import Productos from '@/components/Productos.astro';
-import NoTodos from '@/components/NoTodos.astro';
+import Ingredientes from '@/components/Ingredientes.astro';
+import Ritual from '@/components/Ritual.astro';
+import Testimonios from '@/components/Testimonios.astro';
+import Faq from '@/components/Faq.astro';
 import Cierre from '@/components/Cierre.astro';
 import Footer from '@/components/Footer.astro';
 ---
 
 <BaseLayout
-  title="Primate — Explora tu mente. Expande tu perspectiva."
-  description="Primate nace de la curiosidad por entender mejor nuestra mente y percepción. Gnosis para explorar nuevos estados. Mind para acompañar tu día a día."
+  title="Primate — Tu mente es el territorio"
+  description="Primate: bienestar, enfoque y transformación. MIND para rendir cada día, GNOSIS para explorar hacia adentro. Conoce el método, la colección y el ritual."
 >
   <Navbar />
   <main>
     <Hero />
+    <Marquee />
     <Manifiesto />
-    <Mundos />
-    <Caminos />
-    <Filosofia />
+    <Metodo />
+    <Gnosis />
+    <Mind />
     <Productos />
-    <NoTodos />
+    <Ingredientes />
+    <Ritual />
+    <Testimonios />
+    <Faq />
     <Cierre />
   </main>
   <Footer />
 </BaseLayout>
+
+<script>
+  import '../lib/motion.ts';
+</script>

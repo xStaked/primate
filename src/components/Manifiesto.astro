@@ -1,90 +1,123 @@
 ---
 ---
 
-<section class="manifiesto" id="manifiesto">
-  <div class="container">
-    <p class="lab">PRM — 002 · La idea central</p>
-    <h2 class="display">Hay más de una forma de <em>ver las cosas.</em></h2>
-    <div class="grid">
-      <figure>
-        <div class="arch">
-          <img
-            src="/images/cerebro-jungla.jpg"
-            alt="Cerebro rodeado de vegetación exuberante, curiosidad y naturaleza"
-            loading="lazy"
-          />
-        </div>
-        <figcaption class="lab">Fig. 02 — La curiosidad es natural</figcaption>
-      </figure>
-      <div class="copy">
-        <p class="big">
-          Vivimos en un mundo que nos invita constantemente a pensar de la misma manera. Primate
-          nace de una pregunta diferente:
-        </p>
-        <p class="question display">¿Qué pasa cuando nos permitimos explorar nuevas perspectivas?</p>
-        <p class="small">
-          No prometemos respuestas. <strong>Creamos herramientas para hacer mejores preguntas.</strong>
-          Curiosidad primero. Experiencia después. Sin humo, sin soluciones mágicas.
-        </p>
-      </div>
+<section class="manifiesto grain" id="manifiesto">
+  <div class="mani-bg" aria-hidden="true">
+    <img src="/images/cerebro-jungla.jpg" alt="" loading="lazy" decoding="async" data-parallax="0.1" />
+  </div>
+  <div class="container mani-inner">
+    <div class="mani-head" data-reveal>
+      <span class="secnum" aria-hidden="true">01</span>
+      <p class="lab">Manifiesto de marca</p>
     </div>
+    <h2 class="display" data-reveal>
+      No naciste para funcionar en <em>piloto automático.</em>
+    </h2>
+    <div class="mani-grid">
+      <p data-reveal>
+        Primate existe para el hombre que sospecha que hay más: más foco, más presencia, más
+        control sobre su propia mente. Sin humo, sin soluciones mágicas. Curiosidad primero,
+        método después.
+      </p>
+      <p data-reveal>
+        Desde adaptógenos que acompañan tu día hasta exploraciones que cambian tu perspectiva:
+        herramientas para hacer mejores preguntas y rendir a otro nivel.
+      </p>
+    </div>
+    <dl class="cifras" data-reveal>
+      <div>
+        <dt>Líneas</dt>
+        <dd data-count="02">02</dd>
+      </div>
+      <div>
+        <dt>Ingredientes</dt>
+        <dd data-count="06">06</dd>
+      </div>
+      <div>
+        <dt>Ritual</dt>
+        <dd data-count="01">01</dd>
+      </div>
+    </dl>
   </div>
 </section>
 
 <style>
   .manifiesto {
-    background: var(--bone);
-    color: var(--text-on-light);
-    padding: clamp(4rem, 9vw, 7.5rem) 0;
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 10vw, 8.5rem) 0;
   }
-  h2 {
-    font-size: clamp(2.4rem, 5.4vw, 4.4rem);
-    max-width: 20ch;
-    margin: 1rem 0 clamp(2rem, 5vw, 3.5rem);
+  .mani-bg {
+    position: absolute;
+    inset: -14% 0;
+    opacity: 0.32;
   }
-  h2 em {
-    color: var(--moss);
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
-    gap: clamp(2rem, 5vw, 4rem);
-    align-items: start;
-  }
-  figure {
-    margin: 0;
-  }
-  figure img {
+  .mani-bg img {
     width: 100%;
-    height: clamp(380px, 45vw, 560px);
+    height: 100%;
     object-fit: cover;
   }
-  figcaption {
-    margin-top: 0.9rem;
-    color: var(--muted-on-light);
+  .mani-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, var(--void), transparent 30%, transparent 65%, var(--void));
   }
-  .big {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 0 0 1.5rem;
-    max-width: 36rem;
+  .mani-inner {
+    position: relative;
   }
-  .question {
-    font-size: clamp(1.6rem, 3vw, 2.3rem);
-    border-left: 3px solid var(--ember);
-    padding-left: 1.25rem;
-    margin: 0 0 1.5rem;
+  .mani-head {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
-  .small {
-    color: var(--muted-on-light);
-    max-width: 36rem;
+  h2 {
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    max-width: 22ch;
+    margin: 0 0 2.5rem;
+    text-transform: uppercase;
+  }
+  h2 em {
+    color: var(--ember);
+  }
+  .mani-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 62rem;
+  }
+  .mani-grid p {
     margin: 0;
+    font-size: 1.12rem;
+    line-height: 1.7;
+    color: var(--muted-on-dark);
   }
-  .small strong {
-    color: var(--text-on-light);
+  .cifras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 3.5rem 0 0;
+    padding: 2rem 0 0;
+    border-top: 1px solid color-mix(in srgb, var(--text-on-dark) 18%, transparent);
+    max-width: 62rem;
   }
-  @media (max-width: 900px) {
-    .grid {
+  .cifras dt {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted-on-dark);
+    margin-bottom: 0.5rem;
+  }
+  .cifras dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--ember);
+  }
+  @media (max-width: 760px) {
+    .mani-grid {
       grid-template-columns: 1fr;
     }
   }

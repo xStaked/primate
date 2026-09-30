@@ -1,0 +1,146 @@
+---
+---
+
+<section class="mind" id="mind" data-tint>
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="secnum" aria-hidden="true">04</span>
+      <p class="lab">Línea 02 — Tecnológica · Intensa · Enfocada</p>
+    </div>
+    <h2 class="display" data-reveal>MIND <em>/ rendir hacia afuera</em></h2>
+    <div class="comp">
+      <div class="copy">
+        <p class="lead" data-reveal>
+          La línea del rendimiento diario. Adaptógenos y funcionales de precisión para trabajar,
+          crear, entrenar y concentrarte a otro nivel.
+        </p>
+        <p data-reveal>
+          Para la mañana que exige. Para la sesión que no admite distracción. Para el hombre que
+          mide su día en resultados, no en horas.
+        </p>
+        <ul class="tags" data-reveal>
+          <li>Enfoque</li>
+          <li>Energía</li>
+          <li>Precisión</li>
+          <li>Ritual diurno</li>
+        </ul>
+        <div class="frame" data-reveal="clip">
+          <img
+            src="/images/silueta-neural.jpg"
+            alt="Silueta con actividad neural luminosa"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+      <figure class="f-main" data-reveal="clip">
+        <img
+          src="/images/ref-7.jpg"
+          alt="Retrato editorial con estética de alto contraste"
+          loading="lazy"
+          decoding="async"
+          data-parallax="0.07"
+        />
+        <figcaption class="lab">Estado de enfoque</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mind {
+    position: relative;
+    background:
+      radial-gradient(55% 45% at 88% 15%, rgba(185, 214, 232, 0.1), transparent 70%),
+      radial-gradient(40% 35% at 70% 90%, rgba(255, 92, 0, 0.08), transparent 70%),
+      var(--ink);
+    padding: clamp(5rem, 10vw, 8.5rem) 0;
+    border-block: 1px solid color-mix(in srgb, var(--text-on-dark) 10%, transparent);
+    overflow: hidden;
+  }
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  h2 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    margin: 0 0 3rem;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  h2 em {
+    display: block;
+    font-size: 0.38em;
+    letter-spacing: 0.02em;
+    color: var(--ice);
+  }
+  .comp {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+  }
+  .lead {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+    line-height: 1.4;
+    margin: 0 0 1.25rem;
+  }
+  .copy > p:nth-of-type(2) {
+    color: var(--muted-on-dark);
+    margin: 0 0 1.5rem;
+  }
+  .tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+  .tags li {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1px solid color-mix(in srgb, var(--ice) 55%, transparent);
+    color: var(--ice);
+    padding: 0.55rem 1.05rem;
+  }
+  .frame {
+    border: 1px solid color-mix(in srgb, var(--text-on-dark) 20%, transparent);
+    padding: 0.6rem;
+  }
+  .frame img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+  .f-main {
+    margin: 0;
+  }
+  .f-main img {
+    width: 100%;
+    height: clamp(440px, 60vw, 680px);
+    object-fit: cover;
+    object-position: center 20%;
+  }
+  figcaption {
+    margin-top: 0.8rem;
+  }
+  @media (max-width: 900px) {
+    .comp {
+      grid-template-columns: 1fr;
+    }
+    h2,
+    .sec-head {
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+</style>

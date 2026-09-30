@@ -1,0 +1,83 @@
+---
+---
+
+<section class="testis" id="testimonios">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="secnum" aria-hidden="true">08</span>
+      <p class="lab">Testimonios — voces de la manada</p>
+    </div>
+    <h2 class="display" data-reveal>Hombres que <em>ya exploran.</em></h2>
+    <div class="grid">
+      <blockquote data-reveal>
+        <p>“Dejé el tercer café. Mi mañana ahora tiene un orden que no tenía en años.”</p>
+        <footer>Marco D. <span>— MIND Enfoque</span></footer>
+      </blockquote>
+      <blockquote data-reveal>
+        <p>“Entreno mejor a las 6am que antes a las 6pm. No sé qué más decir.”</p>
+        <footer>Javier R. <span>— MIND Energía</span></footer>
+      </blockquote>
+      <blockquote data-reveal>
+        <p>“La noche se volvió mi momento favorito del día. Apago todo y desciendo.”</p>
+        <footer>Andrés L. <span>— GNOSIS Nocturna</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testis {
+    background: var(--ink);
+    padding: clamp(5rem, 10vw, 8.5rem) 0;
+    border-block: 1px solid color-mix(in srgb, var(--text-on-dark) 10%, transparent);
+  }
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: clamp(2.6rem, 6vw, 4.8rem);
+    margin: 0 0 3rem;
+    text-transform: uppercase;
+  }
+  h2 em {
+    color: var(--ember);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  blockquote {
+    margin: 0;
+    border-left: 2px solid var(--ember);
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  blockquote p {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-style: italic;
+    margin: 0;
+  }
+  blockquote footer {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted-on-dark);
+  }
+  blockquote footer span {
+    color: var(--ember);
+  }
+  @media (max-width: 860px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

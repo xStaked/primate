@@ -1,0 +1,128 @@
+---
+---
+
+<section class="metodo" id="metodo">
+  <div class="container metodo-grid">
+    <div class="metodo-sticky">
+      <span class="secnum" aria-hidden="true" data-reveal>02</span>
+      <p class="lab" data-reveal>Método Primate</p>
+      <h2 class="display" data-reveal>Exploración con <em>método.</em></h2>
+      <p data-reveal>
+        Nada aquí es improvisado. Tres pasos separan la curiosidad del dominio: elige tu línea,
+        activa con ingredientes reales e integra el ritual en tu día.
+      </p>
+      <a href="#ritual" class="btn btn-ember" data-reveal>Encontrar mi ritual</a>
+    </div>
+    <ol>
+      <li data-reveal>
+        <span class="paso" aria-hidden="true">01</span>
+        <h3 class="display">Descubre</h3>
+        <p>
+          Elige tu línea: <strong>GNOSIS</strong> para explorar hacia adentro, <strong>MIND</strong>
+          para rendir hacia afuera. Dos caminos, una misma exigencia.
+        </p>
+      </li>
+      <li data-reveal>
+        <span class="paso" aria-hidden="true">02</span>
+        <h3 class="display">Activa</h3>
+        <p>
+          Ingredientes botánicos y funcionales con dosis claras y etiquetas honestas. Sin mezclas
+          opacas, sin promesas infladas.
+        </p>
+      </li>
+      <li data-reveal>
+        <span class="paso" aria-hidden="true">03</span>
+        <h3 class="display">Integra</h3>
+        <p>
+          El ritual diario convierte el producto en hábito: mañana, tarde y noche, cada momento
+          tiene su herramienta.
+        </p>
+      </li>
+    </ol>
+  </div>
+  <p class="vertical metodo-side" aria-hidden="true">Descubre — Activa — Integra</p>
+</section>
+
+<style>
+  .metodo {
+    position: relative;
+    background: var(--ink);
+    padding: clamp(5rem, 10vw, 8.5rem) 0;
+    border-block: 1px solid color-mix(in srgb, var(--text-on-dark) 10%, transparent);
+  }
+  .metodo-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: start;
+  }
+  .metodo-sticky {
+    position: sticky;
+    top: 110px;
+  }
+  h2 {
+    font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+    margin: 1rem 0 1.25rem;
+    text-transform: uppercase;
+  }
+  h2 em {
+    color: var(--ember);
+  }
+  .metodo-sticky p {
+    color: var(--muted-on-dark);
+    max-width: 28rem;
+    margin: 0 0 2rem;
+  }
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0;
+    border-top: 1px solid color-mix(in srgb, var(--text-on-dark) 16%, transparent);
+  }
+  li {
+    padding: 2.25rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--text-on-dark) 16%, transparent);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1.75rem;
+  }
+  .paso {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--ember);
+  }
+  li h3 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 0 0 0.6rem;
+    text-transform: uppercase;
+  }
+  li p {
+    grid-column: 2;
+    margin: 0;
+    color: var(--muted-on-dark);
+    max-width: 32rem;
+  }
+  li strong {
+    color: var(--text-on-dark);
+  }
+  .metodo-side {
+    position: absolute;
+    left: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  @media (max-width: 900px) {
+    .metodo-grid {
+      grid-template-columns: 1fr;
+    }
+    .metodo-sticky {
+      position: static;
+    }
+    .metodo-side {
+      display: none;
+    }
+  }
+</style>

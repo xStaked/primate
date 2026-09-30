@@ -2,17 +2,15 @@
 ---
 
 <header class="nav">
-  <div class="progress" data-progress aria-hidden="true"></div>
   <div class="container nav-inner">
-    <a href="#top" class="wordmark" aria-label="Primate — inicio">PRIMATE<sup>®</sup></a>
+    <a href="#top" class="wordmark" aria-label="Primate — inicio">PRIMATE</a>
     <nav aria-label="Navegación principal">
       <a href="#manifiesto">Manifiesto</a>
-      <a href="#metodo">Método</a>
       <a href="#gnosis">Gnosis</a>
       <a href="#mind">Mind</a>
-      <a href="#faq">FAQ</a>
+      <a href="#filosofia">Filosofía</a>
     </nav>
-    <a href="#productos" class="nav-cta">Explorar la colección</a>
+    <a href="#caminos" class="nav-cta">Elige tu camino</a>
   </div>
 </header>
 
@@ -21,37 +19,23 @@
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 50;
-    background: color-mix(in srgb, var(--void) 78%, transparent);
+    background: color-mix(in srgb, var(--void) 72%, transparent);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid color-mix(in srgb, var(--text-on-dark) 12%, transparent);
-  }
-  .progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--ember);
-    transform: scaleX(0);
-    transform-origin: 0 50%;
   }
   .nav-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    min-height: 72px;
+    min-height: 68px;
   }
   .wordmark {
+    font-family: var(--font-body);
     font-weight: 700;
-    letter-spacing: 0.24em;
-    font-size: 1rem;
+    letter-spacing: 0.22em;
+    font-size: 0.95rem;
     text-decoration: none;
-  }
-  .wordmark sup {
-    font-size: 0.55em;
-    letter-spacing: 0;
-    opacity: 0.6;
   }
   nav {
     display: flex;
@@ -59,30 +43,29 @@
   }
   nav a {
     text-decoration: none;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     color: var(--muted-on-dark);
   }
   nav a:hover {
-    color: var(--ember);
+    color: var(--text-on-dark);
   }
   .nav-cta {
     text-decoration: none;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    background: var(--ember);
-    color: #fff;
+    border: 1px solid color-mix(in srgb, var(--text-on-dark) 30%, transparent);
     border-radius: 999px;
-    padding: 0.65rem 1.35rem;
+    padding: 0.6rem 1.3rem;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
-    transition: background 160ms ease-out;
   }
   .nav-cta:hover {
-    background: var(--text-on-dark);
-    color: var(--void);
+    background: var(--acid);
+    color: #111;
+    border-color: var(--acid);
   }
-  @media (max-width: 860px) {
+  @media (max-width: 760px) {
     nav {
       display: none;
     }

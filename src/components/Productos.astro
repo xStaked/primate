@@ -3,165 +3,116 @@
 
 <section class="productos" id="productos">
   <div class="container">
-    <div class="sec-head" data-reveal>
-      <span class="secnum" aria-hidden="true">05</span>
-      <p class="lab">Productos destacados</p>
-    </div>
-    <div class="prod-head">
-      <h2 class="display" data-reveal>La <em>colección.</em></h2>
-      <p data-reveal>
-        Tres piezas. Cero relleno. Cada una con su momento del día y su función clara.
-      </p>
-    </div>
-    <div class="grid">
-      <article class="card" data-tilt data-reveal>
+    <p class="lab">PRM — 005 · Lenguaje de producto</p>
+    <h2 class="display">No un frasco. <em>Un objeto.</em></h2>
+    <p class="intro">
+      Dos lenguajes, una familia. Mind minimalista y luminoso. Gnosis experimental, más cerca de
+      un objeto de colección que de un suplemento tradicional.
+    </p>
+    <div class="dos">
+      <article class="prod mind">
         <div class="img">
           <img
             src="/images/mind-product.jpg"
-            alt="Frascos de la línea Mind entre musgo y elementos naturales"
+            alt="Frascos Mind con etiqueta minimalista entre musgo y hojas"
             loading="lazy"
-            decoding="async"
           />
         </div>
-        <p class="lab">MIND — 01</p>
-        <h3 class="display">Enfoque</h3>
-        <p class="desc">Lion's Mane. Tu primera hora manda: ritual matutino de precisión.</p>
-        <span class="cta">Explorar →</span>
+        <p class="lab">Mind — Lion's Mane</p>
+        <h3 class="display">Rutina con intención</h3>
+        <p>Etiquetas de color por función. Ingredientes visibles. Nada que esconder.</p>
       </article>
-      <article class="card featured" data-tilt data-reveal>
-        <div class="img">
-          <img
-            src="/images/ref-10.jpg"
-            alt="Colección de extractos botánicos sobre musgo"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-        <p class="lab">MIND — 02</p>
-        <h3 class="display">Energía</h3>
-        <p class="desc">Cordyceps. Entrena, crea, ejecuta: combustible diurno limpio.</p>
-        <span class="cta">Explorar →</span>
-      </article>
-      <article class="card" data-tilt data-reveal>
+      <article class="prod gnosis">
         <div class="img">
           <img
             src="/images/producto-ritual.jpg"
-            alt="Producto ritual rodeado de hongos y texturas orgánicas"
+            alt="Producto rodeado de hongos y texturas orgánicas en fondo oscuro"
             loading="lazy"
-            decoding="async"
           />
         </div>
-        <p class="lab">GNOSIS — 01</p>
-        <h3 class="display">Nocturna</h3>
-        <p class="desc">Reishi. Cierra el día hacia adentro: ritual nocturno de descenso.</p>
-        <span class="cta">Explorar →</span>
+        <p class="lab">Gnosis — Psilocybin</p>
+        <h3 class="display">Edición de exploración</h3>
+        <p>Identidad experimental. Información educativa y contexto antes que promesas.</p>
       </article>
     </div>
+    <p class="nota">
+      Primate no hace afirmaciones médicas. Hablamos de exploración, curiosidad, perspectiva,
+      rutina y bienestar — y distinguimos entre información educativa, investigación y producto.
+    </p>
   </div>
 </section>
 
 <style>
   .productos {
-    background: var(--void);
-    padding: clamp(5rem, 10vw, 8.5rem) 0;
-  }
-  .sec-head {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .prod-head {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
+    background: var(--paper);
+    color: var(--text-on-light);
+    padding: clamp(4rem, 9vw, 7.5rem) 0;
   }
   h2 {
-    font-size: clamp(3rem, 7vw, 5.5rem);
-    margin: 0;
-    text-transform: uppercase;
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+    margin: 1rem 0 1rem;
   }
   h2 em {
     color: var(--ember);
   }
-  .prod-head p {
-    color: var(--muted-on-dark);
-    max-width: 24rem;
-    margin: 0;
+  .intro {
+    max-width: 40rem;
+    color: var(--muted-on-light);
+    margin: 0 0 2.5rem;
+    font-size: 1.1rem;
   }
-  .grid {
+  .dos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
-    perspective: 1200px;
   }
-  .card {
-    background: var(--ink);
-    border: 1px solid color-mix(in srgb, var(--text-on-dark) 14%, transparent);
+  .prod {
     border-radius: var(--radius);
     overflow: hidden;
-    padding-bottom: 1.75rem;
-    will-change: transform;
-    transition: border-color 200ms ease-out;
+    border: 1px solid color-mix(in srgb, var(--text-on-light) 14%, transparent);
+    background: #fff;
   }
-  .card:hover {
-    border-color: color-mix(in srgb, var(--ember) 60%, transparent);
-  }
-  .card .img {
-    overflow: hidden;
-  }
-  .card img {
+  .prod .img img {
     width: 100%;
-    height: 380px;
+    height: clamp(300px, 36vw, 440px);
     object-fit: cover;
-    transition: transform 500ms ease-out;
   }
-  .card:nth-child(1) img {
-    object-position: center 35%;
+  .prod > *:not(.img) {
+    padding-inline: 1.75rem;
   }
-  .card:nth-child(2) img {
-    object-position: center 60%;
+  .prod .lab {
+    padding-top: 1.5rem;
+    color: var(--muted-on-light);
   }
-  .card:nth-child(3) img {
-    object-position: center 30%;
-  }
-  .card:hover img {
-    transform: scale(1.05);
-  }
-  .card > *:not(.img) {
-    padding-inline: 1.6rem;
-  }
-  .card .lab {
-    padding-top: 1.4rem;
-    color: var(--ember);
-    opacity: 1;
-  }
-  .card h3 {
-    font-size: 2rem;
+  .prod h3 {
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem);
     margin: 0.5rem 0;
-    text-transform: uppercase;
   }
-  .desc {
-    color: var(--muted-on-dark);
-    margin: 0 0 1.25rem;
-    font-size: 0.98rem;
+  .prod p:last-of-type {
+    padding-bottom: 1.75rem;
+    color: var(--muted-on-light);
+    margin: 0;
   }
-  .cta {
-    font-weight: 600;
+  .prod.gnosis {
+    background: var(--void);
     color: var(--text-on-dark);
+    border-color: var(--ink-2);
   }
-  .featured {
-    border-color: color-mix(in srgb, var(--ember) 45%, transparent);
+  .prod.gnosis p:last-of-type,
+  .prod.gnosis .lab {
+    color: var(--muted-on-dark);
   }
-  @media (max-width: 900px) {
-    .grid {
+  .nota {
+    margin: 2.5rem 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--muted-on-light);
+    max-width: 52rem;
+  }
+  @media (max-width: 760px) {
+    .dos {
       grid-template-columns: 1fr;
-    }
-    .card img {
-      height: 320px;
     }
   }
 </style>

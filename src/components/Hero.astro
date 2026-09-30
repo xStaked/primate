@@ -1,112 +1,112 @@
 ---
 ---
 
-<section class="hero grain" id="top">
-  <div class="hero-bg" aria-hidden="true">
-    <img src="/images/hero-rostro.jpg" alt="" fetchpriority="high" data-parallax="0.08" />
-  </div>
-  <div class="container hero-inner">
-    <p class="lab" data-hero="kicker">Bienestar · Enfoque · Transformación</p>
-    <h1 class="display" data-hero="title">
-      <span class="line-mask"><span class="line">Tu mente</span></span>
-      <span class="line-mask"><span class="line">es el <em>territorio.</em></span></span>
-    </h1>
-    <p class="lede" data-hero="lede">
-      Primate es el universo para el hombre que quiere dominar su energía, afinar su enfoque y
-      transformar su rutina. Exploración con método. Intensidad con control.
-    </p>
-    <div class="actions" data-hero="cta">
-      <a href="#productos" class="btn btn-ember">Explorar la colección</a>
-      <a href="#metodo" class="btn btn-ghost">Conocer el método</a>
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="lab">PRM — 001 · Exploración de la mente</p>
+      <h1 class="display">Tu mente tiene más <em>lugares</em> por explorar.</h1>
+      <p class="lede">
+        Primate nace para los curiosos. Una nueva generación de productos para acompañar tu día a
+        día y explorar diferentes estados de percepción y conciencia.
+      </p>
+      <div class="actions">
+        <a href="#caminos" class="btn btn-light">Explorar Primate</a>
+        <a href="#manifiesto" class="btn btn-ghost-dark">El manifiesto</a>
+      </div>
+      <p class="lines"><span>Gnosis · Explorar</span><span>Mind · Avanzar</span></p>
     </div>
-    <div class="hero-meta" data-hero="meta">
-      <span class="lab">GNOSIS — Explorar</span>
-      <span class="rule" aria-hidden="true"></span>
-      <span class="lab">MIND — Rendir</span>
-    </div>
+    <figure class="hero-fig">
+      <div class="arch hero-img">
+        <img
+          src="/images/hero-rostro.jpg"
+          alt="Rostro humano atravesado por luz de colores, como un cambio de percepción"
+          fetchpriority="high"
+        />
+      </div>
+      <figcaption class="lab">Fig. 01 — Cambio de percepción</figcaption>
+    </figure>
   </div>
-  <p class="vertical hero-side" aria-hidden="true">PRM — 001 · Estado de dominio</p>
 </section>
 
 <style>
   .hero {
-    position: relative;
-    min-height: 100svh;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-    padding: calc(72px + 3rem) 0 4rem;
-  }
-  .hero-bg {
-    position: absolute;
-    inset: -12% 0;
-  }
-  .hero-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 70% center;
-  }
-  .hero-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
+    padding: calc(68px + clamp(2.5rem, 6vw, 5rem)) 0 clamp(3rem, 7vw, 5.5rem);
     background:
-      linear-gradient(100deg, rgba(11, 10, 8, 0.94) 22%, rgba(11, 10, 8, 0.55) 55%, rgba(11, 10, 8, 0.25) 100%),
-      linear-gradient(to top, var(--void) 2%, transparent 30%);
+      radial-gradient(60% 50% at 80% 10%, rgba(255, 46, 136, 0.14), transparent 70%),
+      radial-gradient(50% 45% at 10% 90%, rgba(217, 242, 79, 0.07), transparent 70%),
+      var(--void);
   }
-  .hero-inner {
-    position: relative;
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
   }
   h1 {
-    font-size: clamp(3.4rem, 9vw, 7.5rem);
-    margin: 1.2rem 0 1.5rem;
-    text-transform: uppercase;
+    font-size: clamp(2.9rem, 6.4vw, 5.4rem);
+    margin: 1.1rem 0 1.4rem;
   }
   h1 em {
-    color: var(--ember);
-  }
-  .line-mask {
-    display: block;
-    overflow: hidden;
-  }
-  .line {
-    display: block;
-    will-change: transform;
+    color: var(--acid);
   }
   .lede {
-    font-size: 1.18rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
     color: var(--muted-on-dark);
-    max-width: 36rem;
-    margin: 0 0 2.2rem;
+    max-width: 34rem;
+    margin: 0 0 2rem;
   }
   .actions {
     display: flex;
-    gap: 1rem;
+    gap: 0.9rem;
     flex-wrap: wrap;
   }
-  .hero-meta {
+  .lines {
     display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    margin-top: 3rem;
+    gap: 1.5rem;
+    margin: 2.2rem 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted-on-dark);
   }
-  .rule {
-    flex: 0 0 120px;
-    height: 1px;
-    background: color-mix(in srgb, var(--text-on-dark) 30%, transparent);
+  .lines span:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--magenta);
+    margin-right: 0.5rem;
   }
-  .hero-side {
-    position: absolute;
-    right: 1.4rem;
-    bottom: 4rem;
+  .lines span:last-child::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ember);
+    margin-right: 0.5rem;
   }
-  @media (max-width: 760px) {
-    .hero-bg img {
-      object-position: 62% center;
+  .hero-fig {
+    margin: 0;
+  }
+  .hero-img img {
+    width: 100%;
+    height: clamp(420px, 60vw, 640px);
+    object-fit: cover;
+  }
+  figcaption {
+    margin-top: 0.9rem;
+  }
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
     }
-    .hero-side {
-      display: none;
+    .hero-img img {
+      height: 420px;
     }
   }
 </style>

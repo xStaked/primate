@@ -1,19 +1,20 @@
 ---
 ---
 
-<section class="cierre grain" id="cierre">
+<section class="cierre" id="cierre">
   <div class="bg" aria-hidden="true">
-    <img src="/images/silueta-neural.jpg" alt="" loading="lazy" decoding="async" data-parallax="0.08" />
+    <img src="/images/silueta-neural.jpg" alt="" loading="lazy" />
   </div>
   <div class="container cierre-inner">
-    <p class="lab" data-reveal>10 — Cierre</p>
-    <h2 class="display" data-reveal>Bienvenido a <em>Primate.</em></h2>
-    <p data-reveal>
-      Hay cosas que conoces. Cosas que crees conocer. Y todo lo que todavía no descubriste. Tu
-      territorio te espera.
+    <p class="lab">PRM — 007 · Cierre</p>
+    <h2 class="display">¿Hasta dónde llega <em>tu curiosidad?</em></h2>
+    <p>
+      Hay cosas que conocemos. Hay cosas que creemos conocer. Y después está todo lo que todavía
+      no hemos descubierto.
     </p>
-    <div class="actions" data-reveal>
-      <a href="#productos" class="btn btn-ember">Explorar la colección</a>
+    <p class="firma display">Bienvenido a Primate.</p>
+    <div class="actions">
+      <a href="#caminos" class="btn btn-light">Elige tu camino →</a>
     </div>
   </div>
 </section>
@@ -22,13 +23,15 @@
   .cierre {
     position: relative;
     overflow: hidden;
-    padding: clamp(6rem, 12vw, 10rem) 0;
+    background: var(--void);
+    color: var(--text-on-dark);
+    padding: clamp(5rem, 11vw, 9rem) 0;
     text-align: center;
   }
   .bg {
     position: absolute;
-    inset: -12% 0;
-    opacity: 0.5;
+    inset: 0;
+    opacity: 0.42;
   }
   .bg img {
     width: 100%;
@@ -39,24 +42,29 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(70% 80% at 50% 50%, transparent 15%, var(--void) 92%);
+    background: radial-gradient(70% 80% at 50% 50%, transparent 20%, var(--void) 90%);
   }
   .cierre-inner {
     position: relative;
   }
   h2 {
-    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-size: clamp(2.6rem, 6vw, 5rem);
     margin: 1rem auto 1.25rem;
-    text-transform: uppercase;
+    max-width: 20ch;
   }
   h2 em {
-    color: var(--ember);
+    color: var(--acid);
   }
   p {
     color: var(--muted-on-dark);
     max-width: 36rem;
-    margin: 0 auto 2.25rem;
-    font-size: 1.12rem;
+    margin: 0 auto 1rem;
+    font-size: 1.1rem;
+  }
+  .firma {
+    color: var(--text-on-dark);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    margin: 1.5rem 0 2rem;
   }
   .actions {
     display: flex;

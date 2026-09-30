@@ -1,32 +1,27 @@
 /* Primate — Design Tokens
- * Premium editorial cinematográfico.
- * Base: Void + Ember. Atmósferas propias por línea.
+ * Nature × Science × Psychedelia × Luxury
+ * Base: Void + Bone. Acentos con rol asignado, no decoración.
  */
 
 :root {
   /* Superficies */
-  --void: #0b0a08;
-  --ink: #14120e;
-  --ink-2: #1e1a14;
+  --void: #0c0c10;
+  --ink: #14141a;
+  --ink-2: #1d1d25;
   --bone: #f2ede3;
+  --sand: #e6dbc6;
   --paper: #faf7f0;
 
-  /* Acento principal */
-  --ember: #ff5c00;
-  --ember-deep: #b23e00;
-  --gold: #c8a24a;
-
-  /* Atmósfera GNOSIS — botánica, sensorial */
-  --moss: #9aa83c;
-  --moss-deep: #3d4520;
-
-  /* Atmósfera MIND — tecnológica, intensa */
-  --ice: #b9d6e8;
-  --ice-deep: #22333f;
+  /* Acentos por rol */
+  --ember: #ff5c00; /* Mind — acción / energía diurna */
+  --magenta: #ff2e88; /* Gnosis — profundidad / percepción */
+  --moss: #33402a; /* Mind — naturaleza / laboratorio */
+  --acid: #d9f24f; /* marca — marcador de laboratorio, uso puntual */
+  --gold: #c8a24a; /* lujo editorial, detalles */
 
   /* Texto */
   --text-on-dark: #f4f1e8;
-  --muted-on-dark: #a8a094;
+  --muted-on-dark: #a8a49a;
   --text-on-light: #16130d;
   --muted-on-light: #6f6a5e;
 
@@ -36,6 +31,8 @@
   --font-mono: 'Space Mono', ui-monospace, monospace;
 
   /* Forma y ritmo */
+  --arch: 999px 999px 28px 28px;
   --radius: 20px;
-  --container: 80rem;
+  --container: 76rem;
+  --line: 1px solid color-mix(in srgb, currentColor 16%, transparent);
 }

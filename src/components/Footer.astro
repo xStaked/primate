@@ -3,7 +3,12 @@
 
 <footer class="footer">
   <div class="container">
-    <p class="giant display" aria-hidden="true">PRIMATE</p>
+    <img
+      class="footer-logo"
+      src="/images/logo-png.png"
+      alt="Primate — The Primal Mind"
+      loading="lazy"
+    />
     <div class="row">
       <div>
         <p class="lab">Explora tu mente · Expande tu perspectiva</p>
@@ -35,13 +40,12 @@
     padding: clamp(3rem, 7vw, 5rem) 0 2rem;
     overflow: hidden;
   }
-  .giant {
-    font-size: clamp(3.5rem, 12.5vw, 11rem);
-    line-height: 0.95;
-    letter-spacing: 0.01em;
+  .footer-logo {
+    width: min(380px, 82vw);
+    height: auto;
+    display: block;
     margin: 0 0 2.5rem;
-    color: transparent;
-    -webkit-text-stroke: 1px color-mix(in srgb, var(--text-on-dark) 45%, transparent);
+    border-radius: 20px;
   }
   .row {
     display: grid;

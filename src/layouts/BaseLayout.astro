@@ -21,15 +21,17 @@ const canonical = new URL(Astro.url.pathname, siteUrl).toString();
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/images/navbar-mark.png" />
+    <link rel="apple-touch-icon" href="/images/navbar-mark.png" />
     <meta name="generator" content={Astro.generator} />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content="/images/hero-rostro.jpg" />
+    <meta property="og:image" content="/images/logo-monocromatico.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/images/logo-monocromatico.png" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
